@@ -1,0 +1,27 @@
+<h1 ng-if="add">Додати працівника</h1>
+<h1 ng-if="!add">Редагувати працівника</h1>
+<hr>
+<form>
+    <div class="form-group">
+        <label>Ім'я</label>
+        <input class="form-control" ng-model="person.f_name">
+    </div>
+
+    <div class="form-group">
+        <label for="lastName">Прізвище</label>
+        <input class="form-control" id="lastName" ng-model="person.l_name">
+    </div>
+
+    <div class="form-group">
+        <label>Адреса проживання</label>
+        <input class="form-control" ng-model="person.address">
+    </div>
+
+    <div class="form-group">
+        <label for="contact">Номер телефона</label>
+        <input class="form-control" id="contact" ng-model="person.contact">
+    </div>
+
+    <a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+    <input type="button" class="btn btn-info" value="Зберегти" ng-click="save()">
+</form>

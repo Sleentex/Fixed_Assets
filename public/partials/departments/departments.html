@@ -1,0 +1,11 @@
+<h1>Список відділів</h1>
+<font face="Arial" size="4">
+    <ul type="square">
+        <li ng-repeat='department in departments'>
+            <a href="/#/department/{{department._id}}">{{department.name}}</a>
+        </li>
+    </ul>
+</font>
+
+<a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+<a href="/#/add-department" class="btn btn-info">Додати відділ</a>

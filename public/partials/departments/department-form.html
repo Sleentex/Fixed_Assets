@@ -1,0 +1,19 @@
+<h1 ng-if="add">Додати відділ</h1>
+<h1 ng-if="!add">Редагувати відділ</h1>
+<hr>
+<form>
+    <div class="form-group">
+        <label>Ім'я відділу</label>
+        <input class="form-control" ng-model="department.name">
+    </div>
+
+    <div class="form-group">
+        <label>Працівники:</label>
+        <select size="5" class="form-control" ng-model="department.employees" multiple>           
+            <option ng-repeat="person in persons" value="{{person._id}}">{{person.f_name}} {{person.l_name}}</option>
+        </select>
+    </div>
+
+    <a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+    <input type="button" class="btn btn-info" value="Зберегти" ng-click="save()">
+</form>

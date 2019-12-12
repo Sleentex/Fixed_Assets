@@ -1,0 +1,13 @@
+<h1>Інформація про фільм</h1>
+<br>
+<font face="Arial" size="4">
+    Ім'я: {{video.title}}
+    <br>
+    Жанр: {{video.genre}}
+    <br>
+    Опис: {{video.description}}
+</font>
+<br><br>
+<a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+<a href="/#/video/update/{{video._id}}" class="btn btn-warning">Редагувати</a>
+<a href="/#/video/delete/{{video._id}}" class="btn btn-danger">Видалити</a>

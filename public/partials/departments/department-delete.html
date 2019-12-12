@@ -1,0 +1,17 @@
+<h1>Видалення відділу</h1>
+<hr>
+<font face="Arial" size="4">
+    <p><b>Ви впевнені, що хочете видалити відділ?</b></p>
+    <ul type="square">
+        <li><b>Назва:</b> {{department.name}}</li>
+        <li>
+            <b>Працівники:</b>
+            <span ng-repeat="person in department.persons">
+                <a href="/#/person/{{person._id}}">{{person.f_name}} {{person.l_name}}</a><span ng-show="!$last">, </span>           
+            </span>
+        </li>
+    </ul>
+</font>
+<hr>
+<input type="button" value="Так, видалити" class="btn btn-danger" ng-click="delete()"></input>
+<a class="btn btn-default" href="/#/department/{{department._id}}">Ні, назад</a>

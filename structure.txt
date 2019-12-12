@@ -1,0 +1,54 @@
+[COLLECTION] persons:     
+        _id
+        f_name
+        l_name
+        address
+        contact        
+{
+    "f_name": "Михайло",
+    "l_name": "",
+    "address": "",
+    "contact": ""
+}
+
+
+[COLLECTION] departments:    
+        _id
+        name
+        employees
+{   
+    "name": "",
+    "employees": ["", ""]
+}
+
+
+[COLLECTION] fixed_assets:    
+        _id
+        name
+        details
+{
+    "name": "",
+    "details": ""
+}
+
+[COLLECTION] info:
+    _id
+    fixed_asset_id
+    person_id
+    type_move_id
+    date
+
+{
+    "fixed_asset_id": "",
+    "person_id": "",
+    "type_move_id": "",
+    "date": ""
+}
+
+[COLLECTION] type_moves:
+    _id
+    type
+  
+{
+    "type": ""  
+}

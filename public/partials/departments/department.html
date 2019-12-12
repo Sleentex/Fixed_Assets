@@ -1,0 +1,17 @@
+<h1>Інформація про відділ</h1>
+<hr>
+<font face="Arial" size="4">
+    <ul type="square">
+        <li><b>Назва:</b> {{department.name}}</li>
+        <li>
+            <b>Працівники:</b>
+            <span ng-repeat="person in department.persons">
+                <a href="/#/person/{{person._id}}">{{person.f_name}} {{person.l_name}}</a><span ng-show="!$last">, </span>           
+            </span>
+        </li>
+    </ul>
+</font>
+<hr>
+<a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+<a href="/#/department/update/{{department._id}}" class="btn btn-warning">Редагувати</a>
+<a href="/#/department/delete/{{department._id}}" class="btn btn-danger">Видалити</a>

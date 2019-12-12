@@ -1,0 +1,17 @@
+<h1>Інформація про основний засіб</h1>
+<hr>
+<font face="Arial" size="4">
+    <ul type="square">        
+        <li><b>Основний засіб:</b> <a href="/#/fixed_asset/{{info.fixed_asset._id}}">{{info.fixed_asset.name}} {{info.fixed_asset.details}}</a></li>
+        <li><b>Дата:</b> {{info.date | date: 'dd.MM.yyyy'}}</li>        
+        <li><b>Тип:</b> {{info.type_move.type}}</li>
+        <li>
+            <b>Працівник:</b>
+            <a href="/#/person/{{info.person._id}}">{{info.person.f_name}} {{info.person.l_name}}</a>          
+        </li>
+    </ul>
+</font>
+<hr>
+<a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+<a href="/#/info/update/{{info._id}}" class="btn btn-warning">Редагувати</a>
+<a href="/#/info/delete/{{info._id}}" class="btn btn-danger">Видалити</a>

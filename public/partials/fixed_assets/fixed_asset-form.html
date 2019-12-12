@@ -1,0 +1,17 @@
+<h1 ng-if="add">Додати основний засіб</h1>
+<h1 ng-if="!add">Редагувати основний засіб</h1>
+<hr>
+<form>
+    <div class="form-group">
+        <label>Назва</label>
+        <input class="form-control" ng-model="fixed_asset.name">
+    </div>
+
+    <div class="form-group">
+        <label>Виробник</label>
+        <input class="form-control" ng-model="fixed_asset.details">
+    </div>
+
+    <a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+    <input type="button" class="btn btn-info" value="Зберегти" ng-click="save()">
+</form>

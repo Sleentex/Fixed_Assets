@@ -1,0 +1,33 @@
+<h1 ng-if="add">Додати дію</h1>
+<h1 ng-if="!add">Редагувати дію</h1>
+<hr>
+<form>
+    <div class="form-group">
+        <label>Дата:</label>
+        <input type="date" class="form-control" ng-model="info.date">
+    </div>
+
+    <div class="form-group">
+        <label>Працівники:</label>
+        <select size="4" class="form-control" ng-model="info.person_id"> 
+            <option ng-repeat="person in persons" value="{{person._id}}">{{person.f_name}} {{person.l_name}}</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Основні засоби:</label>
+        <select size="4" class="form-control" ng-model="info.fixed_asset_id">
+            <option ng-repeat="fixed_asset in fixed_assets" selected value="{{fixed_asset._id}}">{{fixed_asset.name}} - {{fixed_asset.details}}</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Тип:</label>
+        <select size="4" class="form-control" ng-model="info.type_move_id">
+            <option ng-repeat="type_move in type_moves" value="{{type_move._id}}">{{type_move.type}}</option>
+        </select>
+    </div>
+
+    <a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+    <input type="button" class="btn btn-info" value="Зберегти" ng-click="save()">
+</form>

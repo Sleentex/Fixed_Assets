@@ -1,0 +1,13 @@
+<h1>Видалення працівника</h1>
+<hr>
+<font face="Arial" size="4">
+    <p><b>Ви впевнені, що хочете видалити працівника?</b></p>
+    <ul type="square">
+        <li><b>Прізвище та ім'я:</b> {{person.f_name}} {{person.l_name}}</li>
+        <li><b>Адреса проживання:</b> {{person.address}}</li>
+        <li><b>Номер телефону:</b> {{person.contact}}</li>
+    </ul>
+</font>
+<hr>
+<input type="button" value="Так, видалити" class="btn btn-danger" ng-click="delete()"></input>
+<a class="btn btn-default" href="/#/person/{{person._id}}">Ні, назад</a>

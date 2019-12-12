@@ -1,0 +1,10 @@
+<h1>Список працівників</h1>
+<font face="Arial" size="4">
+    <ul  type="square">
+        <li ng-repeat='person in persons'>
+            <a href="/#/person/{{person._id}}">{{person.f_name}} {{person.l_name}}</a>
+        </li>
+    </ul>
+</font>
+    <a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+    <a href="/#/add-person" class="btn btn-info">Додати працівника</a>

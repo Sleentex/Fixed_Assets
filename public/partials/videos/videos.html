@@ -1,0 +1,11 @@
+<h1>Список фільмів</h1>
+<font face="Arial" size="4">
+    <ul>
+        <li ng-repeat='video in videosHTML'>
+            <a href="/#/video/{{video._id}}">{{video.title}}</a>
+        </li>
+    </ul>
+</font>
+    <a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+    <a href="/#/add-video" class="btn btn-info">Добавити фільм</a>
+

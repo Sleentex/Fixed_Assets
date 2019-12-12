@@ -1,0 +1,14 @@
+<h1>Видалення дії</h1>
+<hr>
+<font face="Arial" size="4">
+    <p><b>Ви впевнені, що хочете видалити дію?</b></p>
+    <ul type="square">
+        <li><b>Основний засіб:</b> {{info.fixed_asset.name}} - {{info.fixed_asset.details}}</li>
+        <li><b>Дата:</b> {{info.date}}</li>
+        <li><b>Тип:</b> {{info.type_move.type}}</li>
+        <li><b>Працівник:</b> {{info.person.f_name}} {{info.person.l_name}}</li>
+    </ul>
+</font>
+<hr>
+<input type="button" value="Так, видалити" class="btn btn-danger" ng-click="delete()"></input>
+<a class="btn btn-default" href="/#/info/{{info._id}}">Ні, назад</a>

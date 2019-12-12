@@ -1,0 +1,10 @@
+<h1>Список основних засобів</h1>
+<font face="Arial" size="4">
+    <ul  type="square">
+        <li ng-repeat='fixed_asset in fixed_assets'>
+            <a href="/#/fixed_asset/{{fixed_asset._id}}">{{fixed_asset.name}} - {{fixed_asset.details}}</a>
+        </li>
+    </ul>
+</font>
+    <a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+    <a href="/#/add-fixed_asset" class="btn btn-info">Додати основний засіб</a>

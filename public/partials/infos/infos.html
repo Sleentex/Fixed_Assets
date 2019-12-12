@@ -1,0 +1,11 @@
+<h1>Список дій</h1>
+<font face="Arial" size="4">
+    <ul type="none">
+        <li ng-repeat='info in infos'>
+            <a href="/#/info/{{info._id}}">{{info.date | date: 'dd.MM.yyyy'}} - ({{info.fixed_asset.name}} {{info.fixed_asset.details}}) {{info.type_move.type}} ({{info.person.f_name}} {{info.person.l_name}})</a>
+        </li>
+    </ul>
+</font>
+
+<a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+<a href="/#/add-info" class="btn btn-info">Додати дію</a>

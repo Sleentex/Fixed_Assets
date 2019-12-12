@@ -1,0 +1,13 @@
+<h1>Інформація про працівника</h1>
+<hr>
+<font face="Arial" size="4">
+    <ul type="square">
+        <li><b>Прізвище та ім'я:</b> {{person.f_name}} {{person.l_name}}</li>
+        <li><b>Адреса проживання:</b> {{person.address}}</li>
+        <li><b>Номер телефону:</b> {{person.contact}}</li>
+    </ul>
+</font>
+<hr>
+<a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+<a href="/#/person/update/{{person._id}}" class="btn btn-warning">Редагувати</a>
+<a href="/#/person/delete/{{person._id}}" class="btn btn-danger">Видалити</a>

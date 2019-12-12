@@ -1,0 +1,12 @@
+<h1>Інформація про основний засіб</h1>
+<hr>
+<font face="Arial" size="4">
+    <ul type="square">
+        <li><b>Назва:</b> {{fixed_asset.name}}</li>
+        <li><b>Виробник:</b> {{fixed_asset.details}}</li>
+    </ul>
+</font>
+<hr>
+<a href="/#/" class="btn btn-primary">Повернутись на головну</a>
+<a href="/#/fixed_asset/update/{{fixed_asset._id}}" class="btn btn-warning">Редагувати</a>
+<a href="/#/fixed_asset/delete/{{fixed_asset._id}}" class="btn btn-danger">Видалити</a>
